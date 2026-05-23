@@ -1,0 +1,66 @@
+Project Name: Address Book Management System
+-------------  ------------------------------
+Name: p.Akash Reddy
+----- --------
+ID: 25021_480
+---  ---------
+Date: 17-10-2025
+------ ----------
+Introduction:
+-------------
+             This project is a simple Address Book System made using the C language.
+             It helps to store, search, edit, delete, and display contact details like name, phone number, and email.
+            All contact details are saved in a file so that data is not lost when we close the program.
+
+Important Functions and features:
+----------------------------------
+Function	             Purpose
+---------------------------------------------------
+createContact()	->    Adds new contact after validation
+listContacts()	->    Shows all contacts and sorts them
+searchContact()	->    Finds a contact by name, phone, or email
+editContact()	->     Updates selected contact details
+deleteContact()	->     Removes contact from list
+saveAndExit()	->     Saves all contacts to file
+loadContactsFromFile()->Loads contacts from file at start
+
+Validation Functions:
+----------------------
+
+validate_name() – >Checks that the name has only alphabets and spaces.
+validate_phone() –> Ensures the phone number has 10 digits and is not repeated.
+validate_email() –>Checks email format, only lowercase, and no duplicates and it include '@' and '.'.
+
+File Handling:
+---------------
+               Contacts are stored in a CSV file (like contacts.csv).
+
+Each line stores:
+-------------------
+           Name,Phone,Email
+           The file is updated whenever a contact is added, edited, or deleted.
+
+Program Flow:
+--------------
+       Start → Load contacts → Show menu
+      → (Add / List / Search / Edit / Delete)
+      → Save → Exit
+ 
+Example Output:
+----------------
+           S.No   Name         Phone        Email
+           -------------------------------------------
+           1      Tharun K     9876543210   tharun@gmail.com
+           2      Rahul M      9123456789   rahul@yahoo.com
+
+ Tools Used:
+ ------------
+         Language: C
+         Compiler: GCC
+         File Type: CSV
+         IDE     : VS Code
+
+Conclusion:
+-----------
+         The Address Book project helps in learning C structures, file handling, and validation.
+         It is simple, user-friendly, and keeps contact data safe even after closing the program.
